@@ -62,6 +62,11 @@ body {
   background-size: cover;
   margin-bottom: 20px;
   cursor: pointer;
+  box-sizing: border-box;
+  transition: 0.5s ease;
+}
+.photos-container .photo-list .photo-list-item:hover {
+  border: 2px solid white;
 }
 hr {
   margin: 20px 0;

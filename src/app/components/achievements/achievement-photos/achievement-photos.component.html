@@ -11,9 +11,7 @@
     <hr>
     <div class="photo-list">
       <ng-container *ngFor="let image of images">
-        <div class="photo-list-item">
-          <img [src]="image.src" alt="The achievement photo">
-        </div>
+        <div class="photo-list-item" [style.background-image]="'url(' + image.src + ')'" (click)="selectPhoto(image)"></div>
       </ng-container>
     </div>
   </div>
