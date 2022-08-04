@@ -4,7 +4,7 @@
   bottom: 0;
   left: 0;
   right: 0;
-  background: url(../../../assets/images/introduction-bg.jpg);
+  background: url(../../../assets/images/introduction-bg.jpg) center center;
   background-size: cover;
   overflow: auto;
 }
@@ -69,12 +69,12 @@
       }
 
       table {
-        margin: auto;
+        margin: 20px auto;
         width: 80%;
 
         th, td {
           text-align: left;
-          padding: 12px;
+          padding: 12px 40px;
         }
 
       }
