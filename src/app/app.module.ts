@@ -8,9 +8,12 @@ import { HomeComponent } from '~view/home/home.component';
 import { IntroductionComponent } from '~view/introduction/introduction.component';
 import { AchievementsComponent } from '~view/achievements/achievements.component';
 import { StoriesComponent } from '~view/stories/stories.component';
-import { IconsComponent } from './components/icons/icons.component';
-import { PhotosComponent } from './components/photos/photos.component';
-import { VideosComponent } from './components/videos/videos.component';
+
+import { IconsComponent } from '~components/icons/icons.component';
+import { AchievementPhotosComponent } from '~components/achievements/achievement-photos/achievement-photos.component';
+import { AchievementVideosComponent } from '~components/achievements/achievement-videos/achievement-videos.component';
+import { StoryPhotosComponent } from '~components/stories/story-photos/story-photos.component';
+import { StoryVideosComponent } from '~components/stories/story-videos/story-videos.component';
 
 @NgModule({
   declarations: [
@@ -20,8 +23,10 @@ import { VideosComponent } from './components/videos/videos.component';
     AchievementsComponent,
     StoriesComponent,
     IconsComponent,
-    PhotosComponent,
-    VideosComponent
+    AchievementPhotosComponent,
+    AchievementVideosComponent,
+    StoryPhotosComponent,
+    StoryVideosComponent
   ],
   imports: [
     BrowserModule,

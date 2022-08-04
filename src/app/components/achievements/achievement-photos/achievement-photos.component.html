@@ -1,0 +1,20 @@
+<div class="main-container">
+  <div class="back-btn" title="返回" [routerLink]="'../../achievements'">
+    <svg class="icon" width="24" height="24">
+      <use xlink:href='#back' href='#back'></use>
+    </svg>
+  </div>
+  <div class="photos-container">
+    <div class="photo-details">
+      <img [src]="currentImgSrc" alt="The achievement photo">
+    </div>
+    <div class="vertical-divider"></div>
+    <div class="photo-list">
+      <ng-container *ngFor="let image of images">
+        <div class="photo-list-item">
+          <img [src]="image.src" alt="The achievement photo">
+        </div>
+      </ng-container>
+    </div>
+  </div>
+</div>

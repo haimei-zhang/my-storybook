@@ -4,7 +4,6 @@
   bottom: 0;
   left: 0;
   right: 0;
-  /*background: url(../../../assets/images/story-bg3.jpg) center center;*/
   background: url(../../images/achievement-bg.jpg) center center;
   background-size: cover;
   overflow: auto;
@@ -24,7 +23,7 @@
 .achievements-container {
   display: flex;
   flex-wrap: wrap;
-  justify-content: space-around;
+  justify-content: space-evenly;
   margin: 20vh auto;
 
   .achievement-line {
@@ -65,12 +64,12 @@
     }
 
     .avatar1 {
-      background: url("../../images/achievement-avatar1.jpg") no-repeat center center;
+      background: url("../../images/achievement-avatar3.jpg") no-repeat center center;
       background-size: cover;
     }
 
     .avatar2 {
-      background: url("../../images/achievement-avatar2.jpg") no-repeat center center;
+      background: url("../../images/achievement-avatar4.jpg") no-repeat center center;
       background-size: cover;
     }
 

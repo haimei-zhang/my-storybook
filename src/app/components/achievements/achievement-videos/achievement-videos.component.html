@@ -1,0 +1,20 @@
+<div class="main-container">
+  <div class="back-btn" title="返回" [routerLink]="'../../achievements'">
+    <svg class="icon" width="24" height="24">
+      <use xlink:href='#back' href='#back'></use>
+    </svg>
+  </div>
+  <div class="videos-container">
+    <div class="video-details">
+      <img [src]="currentVideoSrc" alt="The achievement video">
+    </div>
+    <hr>
+    <div class="video-list">
+      <ng-container *ngFor="let video of videos">
+        <div class="video-list-item">
+          <img [src]="video.src" alt="The achievement video">
+        </div>
+      </ng-container>
+    </div>
+  </div>
+</div>
