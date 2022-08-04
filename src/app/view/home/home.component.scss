@@ -1,0 +1,19 @@
+.home-container {
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: url(../../../assets/images/home-without-line.jpg);
+  background-size: cover;
+}
+
+.avatar-container {
+  position: fixed;
+  border: 2px solid white;
+  top: -30vh;
+  left: 15%;
+  right: -30vw;
+  bottom: 20%;
+  border-radius: 50%;
+}
