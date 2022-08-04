@@ -4,7 +4,7 @@
   bottom: 0;
   left: 0;
   right: 0;
-  background: url(../../../assets/images/introduction-bg.jpg) center center;
+  background: url(../../images/introduction-bg.jpg) center center;
   background-size: cover;
   overflow: auto;
 }
@@ -42,12 +42,12 @@
       }
 
       .avatar1 {
-        background: url("../../../assets/images/avatar1.jpg") no-repeat center center;
+        background: url("../../images/avatar1.jpg") no-repeat center center;
         background-size: cover;
       }
 
       .avatar2 {
-        background: url("../../../assets/images/avatar2.jpg") no-repeat center center;
+        background: url("../../images/avatar2.jpg") no-repeat center center;
         background-size: cover;
       }
     }

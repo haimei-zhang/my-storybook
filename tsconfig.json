@@ -28,6 +28,9 @@
       "~libs/*": [
         "src/app/libs/*"
       ],
+      "~images/*": [
+        "src/app/images/*"
+      ],
       "~pipes/*": [
         "src/app/pipes/*"
       ],
