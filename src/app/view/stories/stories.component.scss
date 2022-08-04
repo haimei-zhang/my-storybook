@@ -23,21 +23,32 @@
 
 .stories-container {
   display: flex;
-  height: calc(100vh - 160px);
+  height: 76vh;
   flex-wrap: wrap;
   justify-content: space-around;
   align-items: center;
-  margin: 80px auto;
+  margin: 12vh auto;
+
+  .story-line {
+    position: fixed;
+    border: 2px solid white;
+    top: 48vh;
+    left: -30vw;
+    right: -30vw;
+    bottom: -48vh;
+    border-radius: 50%;
+  }
 
   .avatar-container {
     width: 40%;
     position: relative;
+    cursor: pointer;
 
     &:hover {
       .avatar {
         transition: ease 1s;
         box-shadow: 0 0 28px #f2f0f4;
-        transform: scale(1.2);
+        transform: scale(1.1);
       }
 
       .title {
@@ -52,7 +63,6 @@
       width: 100%;
       height: 0;
       padding-bottom: 100%;
-      cursor: pointer;
     }
 
     .avatar1 {
