@@ -9,6 +9,8 @@ import { IntroductionComponent } from '~view/introduction/introduction.component
 import { AchievementsComponent } from '~view/achievements/achievements.component';
 import { StoriesComponent } from '~view/stories/stories.component';
 import { IconsComponent } from './components/icons/icons.component';
+import { PhotosComponent } from './components/photos/photos.component';
+import { VideosComponent } from './components/videos/videos.component';
 
 @NgModule({
   declarations: [
@@ -17,7 +19,9 @@ import { IconsComponent } from './components/icons/icons.component';
     IntroductionComponent,
     AchievementsComponent,
     StoriesComponent,
-    IconsComponent
+    IconsComponent,
+    PhotosComponent,
+    VideosComponent
   ],
   imports: [
     BrowserModule,

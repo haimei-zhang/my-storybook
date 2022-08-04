@@ -61,16 +61,18 @@
     &:hover {
       transition: ease 1s;
       box-shadow: 0 0 28px #f2f0f4;
+      transform: scale(1.2);
     }
   }
 }
 
 .content-container {
-  padding: 20px;
+  padding: 10%;
   position: relative;
   left: 20vw;
   margin-right: 20vw;
   color: white;
+  z-index: -1;
 
   .title {
     text-align: center;
@@ -78,9 +80,19 @@
 
   .content {
     text-align: left;
-  }
-}
 
-.hidden {
-  display: none;
+    .title {
+      font-size: 3.5em;
+    }
+
+    p {
+      font-size: 2em;
+      line-height: 1.3em;
+    }
+  }
+
+  @media (max-width: 1080px) {
+    padding: 15%;
+
+  }
 }
