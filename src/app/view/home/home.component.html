@@ -1,14 +1,14 @@
 <div class="main-container">
   <div class="avatar-container">
-    <div class="avatar1" (mouseenter)="isAvatar1Active = true"  (mouseleave)="isAvatar1Active = false" [routerLink]="'../introduction'"></div>
-    <div class="avatar2" (mouseenter)="isAvatar2Active = true"  (mouseleave)="isAvatar2Active = false" [routerLink]="'../stories'"></div>
-    <div class="avatar3" (mouseenter)="isAvatar3Active = true"  (mouseleave)="isAvatar3Active = false" [routerLink]="'../achievements'"></div>
+    <div class="avatar avatar1" (mouseenter)="isAvatar1Active = true"  (mouseleave)="isAvatar1Active = false" [routerLink]="'../introduction'"></div>
+    <div class="avatar avatar2" (mouseenter)="isAvatar2Active = true"  (mouseleave)="isAvatar2Active = false" [routerLink]="'../stories'"></div>
+    <div class="avatar avatar3" (mouseenter)="isAvatar3Active = true"  (mouseleave)="isAvatar3Active = false" [routerLink]="'../achievements'"></div>
   </div>
   <div class="content-container">
     <div class="content">
       <div class="content-home" [ngClass]="{hidden: isAvatar1Active || isAvatar2Active || isAvatar3Active}">
         <h1 class="title">我们的故事书</h1>
-        <p>这是佴九良和佴九歌的故事书，还有什么要写的文案呢，不知道啊，啊啊啊啊啊，写什么好呢，不知道不知道不知道， 阿斯顿发送到阿萨德饭啊啊士大夫阿道夫阿萨德饭按到地方按到撒打发士大夫阿萨德饭</p>
+        <p>这是<b class="highlight">佴九良</b>和<b class="highlight">佴九歌</b>的故事书，日常打歌、做任务、玩游乐场、梦想城、到处嗨的记录。</p>
       </div>
       <div class="content1" [ngClass]="{hidden: !isAvatar1Active}">
         <h1 class="title">我们的简介</h1>
@@ -16,12 +16,12 @@
       </div>
       <div class="content2" [ngClass]="{hidden: !isAvatar2Active}">
         <h1 class="title">我们的故事</h1>
-        <p>爱是恒久忍耐，又有恩慈；爱是不嫉妒，爱是不自夸，不张狂，不作害羞的事，不求自己的益处，不轻易发怒，不计算人的恶，不喜欢不义，只喜欢真理；凡事包容，凡事相信，凡事盼望，凡事忍耐；爱是永不止息。<br>
-          ---《新约·哥林多前书》</p>
+        <p>爱是恒久忍耐，又有恩慈；爱是不嫉妒，爱是不自夸，不张狂，不作害羞的事，不求自己的益处，不轻易发怒，不计算人的恶，不喜欢不义，只喜欢真理；凡事包容，凡事相信，凡事盼望，凡事忍耐；爱是永不止息。<br></p>
+        <p style="text-align: right">---《新约·哥林多前书》</p>
       </div>
       <div class="content3" [ngClass]="{hidden: !isAvatar3Active}">
         <h1 class="title">我们的战绩</h1>
-        <p>这是佴九良和佴九歌的战绩，还有什么要写的文案呢，不知道啊，啊啊啊啊啊，写什么好呢，不知道不知道不知道， 阿斯顿发送到阿萨德饭啊啊士大夫阿道夫阿萨德饭按到地方按到撒打发士大夫阿萨德饭</p>
+        <p>起初神造的不是人，是天使，最有智慧，最美丽的天使做了天使长。后来他骄傲了，想要和上帝平起平坐，也要像上帝一样受其他天使的敬拜，于是上帝就审判了他，也审判了这个世界，从此世界一片混沌，渊面黑暗。</p>
       </div>
     </div>
   </div>

@@ -6,10 +6,9 @@
   </div>
   <div class="videos-container">
     <div class="video-details">
-      <!--<video [src]="currentVideoSrc"></video>-->
       <iframe [src]="currentVideoSrc | safe: 'resourceUrl'" scrolling="no" border="0" frameborder="no" framespacing="0" allowfullscreen="true"> </iframe>
     </div>
-    <hr>
+    <div class="vertical-divider"></div>
     <div class="video-list">
       <ng-container *ngFor="let video of videos">
         <div class="video-list-item" (click)="selectVideo(video)">{{video.name}}</div>

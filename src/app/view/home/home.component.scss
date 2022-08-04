@@ -18,13 +18,22 @@
   bottom: 20%;
   border-radius: 50%;
 
-  .avatar1 {
+  .avatar {
     cursor: pointer;
     position: fixed;
     border: 2px solid white;
     border-radius: 50%;
     height: 200px;
     width: 200px;
+
+    &:hover {
+      transition: ease 1s;
+      box-shadow: 0 0 28px #f2f0f4;
+      transform: scale(1.2);
+    }
+  }
+
+  .avatar1 {
     top: 20vh;
     left: 8%;
     background: url("../../images/home-avatar1.jpg") no-repeat center center;
@@ -32,12 +41,6 @@
   }
 
   .avatar2 {
-    cursor: pointer;
-    position: fixed;
-    border: 2px solid white;
-    border-radius: 50%;
-    height: 200px;
-    width: 200px;
     top: 50vh;
     left: 20%;
     background: url("../../images/home-avatar2.jpg") no-repeat center center;
@@ -45,54 +48,80 @@
   }
 
   .avatar3 {
-    cursor: pointer;
-    position: fixed;
-    border: 2px solid white;
-    border-radius: 50%;
-    height: 200px;
-    width: 200px;
     top: 65vh;
     left: 45%;
     background: url("../../images/home-avatar3.jpg") no-repeat center center;
     background-size: cover;
   }
 
-  .avatar1, .avatar2, .avatar3 {
-    &:hover {
-      transition: ease 1s;
-      box-shadow: 0 0 28px #f2f0f4;
-      transform: scale(1.2);
+  @media (max-width: 1080px) {
+    .avatar {
+      width: 175px;
+      height: 175px;
+    }
+  }
+
+  @media (max-width: 800px) {
+    .avatar {
+      width: 150px;
+      height: 150px;
     }
   }
 }
 
 .content-container {
-  padding: 10%;
+  padding: 5% 20%;
   position: relative;
   left: 20vw;
   margin-right: 20vw;
   color: white;
   z-index: -1;
 
-  .title {
-    text-align: center;
-  }
-
   .content {
     text-align: left;
 
     .title {
+      text-align: center;
       font-size: 3.5em;
     }
 
     p {
+      text-indent: 2em;
       font-size: 2em;
       line-height: 1.3em;
     }
   }
 
-  @media (max-width: 1080px) {
-    padding: 15%;
+  .highlight {
+    font-weight: bold;
+    color: red;
+  }
 
+  @media (max-width: 1080px) {
+    padding: 5% 15%;
+
+    .content {
+      .title {
+        font-size: 3em;
+      }
+
+      p {
+        font-size: 1.5em;
+      }
+    }
+  }
+
+  @media (max-width: 800px) {
+    padding: 5% 5% 0 20%;
+
+    .content {
+      .title {
+        font-size: 2.5em;
+      }
+
+      p {
+        font-size: 1em;
+      }
+    }
   }
 }

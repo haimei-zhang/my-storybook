@@ -10,7 +10,7 @@ export class StoryVideosComponent implements OnInit {
   currentVideoSrc: string = '';
   videos = [
     {id: 1, name: '梦想海岸', src: '//player.bilibili.com/player.html?aid=471580612&bvid=BV18T41177HD&cid=790178126&page=1'},
-    {id: 1, name: '梦想海岸2', src: ''},
+    {id: 2, name: '结情缘', src: '//player.bilibili.com/player.html?aid=771669402&bvid=BV12r4y157xX&cid=793759339&page=1'}
   ];
 
   constructor() { }
