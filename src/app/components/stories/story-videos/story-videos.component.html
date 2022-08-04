@@ -6,14 +6,15 @@
   </div>
   <div class="videos-container">
     <div class="video-details">
-      <img [src]="currentVideoSrc" alt="The story video">
+      <!--<video>
+        <source [src]="currentVideoSrc">
+      </video>-->
+      <iframe [src]="currentVideoSrc | safe: 'resourceUrl'" scrolling="no" border="0" frameborder="no" framespacing="0" allowfullscreen="true"> </iframe>
     </div>
     <hr>
     <div class="video-list">
       <ng-container *ngFor="let video of videos">
-        <div class="video-list-item">
-          <img [src]="video.src" alt="The story video">
-        </div>
+        <div class="video-list-item" (click)="selectVideo(video)">{{video.name}}</div>
       </ng-container>
     </div>
   </div>

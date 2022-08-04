@@ -4,6 +4,8 @@ import { BrowserModule } from '@angular/platform-browser';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 
+import { SafePipe } from '~pipes/safe.pipe';
+
 import { HomeComponent } from '~view/home/home.component';
 import { IntroductionComponent } from '~view/introduction/introduction.component';
 import { AchievementsComponent } from '~view/achievements/achievements.component';
@@ -26,7 +28,8 @@ import { StoryVideosComponent } from '~components/stories/story-videos/story-vid
     AchievementPhotosComponent,
     AchievementVideosComponent,
     StoryPhotosComponent,
-    StoryVideosComponent
+    StoryVideosComponent,
+    SafePipe
   ],
   imports: [
     BrowserModule,
