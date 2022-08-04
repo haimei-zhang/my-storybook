@@ -11,8 +11,8 @@
     <div class="vertical-divider"></div>
     <div class="photo-list">
       <ng-container *ngFor="let image of images">
-        <div class="photo-list-item">
-          <img [src]="image.src" alt="The story photo">
+        <div class="photo-list-item" [style.background-image]="'url(' + image.src + ')'" (click)="selectPhoto(image)">
+          <div [style.background]="'url(' + image.src + ')'"></div>
         </div>
       </ng-container>
     </div>
