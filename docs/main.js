@@ -258,7 +258,8 @@ class AchievementVideosComponent {
             { id: 3, name: '爱河 AP', src: '//player.bilibili.com/player.html?aid=856630342&bvid=BV1wV4y177JU&cid=793720951&page=1' },
             { id: 4, name: '冰河时代 差点AP', src: '//player.bilibili.com/player.html?aid=344201258&bvid=BV1nd4y1N78T&cid=793729784&page=1' },
             { id: 5, name: '冰河时代 又差点AP', src: '//player.bilibili.com/player.html?aid=686657132&bvid=BV1oU4y1Y7TH&cid=793736597&page=1' },
-            { id: 6, name: '团队自制逆风碾压', src: '//player.bilibili.com/player.html?aid=514242295&bvid=BV1Hg411y7xd&cid=793753522&page=1' }
+            { id: 6, name: '团队自制逆风碾压', src: '//player.bilibili.com/player.html?aid=514242295&bvid=BV1Hg411y7xd&cid=793753522&page=1' },
+            { id: 7, name: '午夜游乐园MVP', src: '//player.bilibili.com/player.html?aid=344211705&bvid=BV15d4y1N7o1&cid=793852346&page=1' }
         ];
     }
     ngOnInit() {
