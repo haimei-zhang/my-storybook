@@ -1,11 +1,12 @@
-.home-container {
+.main-container {
   position: fixed;
   top: 0;
   bottom: 0;
   left: 0;
   right: 0;
-  background: url(../../../assets/images/home-without-line.jpg);
+  background: url(../../../assets/images/home-without-line.jpg) center center;
   background-size: cover;
+  overflow: auto;
 }
 
 .avatar-container {
@@ -59,8 +60,11 @@
   .avatar1, .avatar2, .avatar3 {
     &:hover {
       transition: ease 1s;
-      width: 250px;
-      height: 250px;
+      /*width: 250px;
+      height: 250px;*/
+      /*opacity: 0.5;*/
+     /* border-width: 4px;*/
+      box-shadow: 0 0 28px #f2f0f4;
     }
   }
 }

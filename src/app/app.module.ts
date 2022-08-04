@@ -8,6 +8,7 @@ import { HomeComponent } from '~view/home/home.component';
 import { IntroductionComponent } from '~view/introduction/introduction.component';
 import { AchievementsComponent } from '~view/achievements/achievements.component';
 import { StoriesComponent } from '~view/stories/stories.component';
+import { IconsComponent } from './components/icons/icons.component';
 
 @NgModule({
   declarations: [
@@ -15,7 +16,8 @@ import { StoriesComponent } from '~view/stories/stories.component';
     HomeComponent,
     IntroductionComponent,
     AchievementsComponent,
-    StoriesComponent
+    StoriesComponent,
+    IconsComponent
   ],
   imports: [
     BrowserModule,

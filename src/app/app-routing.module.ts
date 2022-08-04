@@ -12,7 +12,7 @@ const routes: Routes = [
   { path: 'stories', component: StoriesComponent },
   { path: 'achievements', component: AchievementsComponent },
   { path: '',   redirectTo: '/home', pathMatch: 'full' },
-  { path: '**', component: HomeComponent }
+  { path: '**', redirectTo: '/home' }
 ];
 
 @NgModule({

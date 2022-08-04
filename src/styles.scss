@@ -1,1 +1,30 @@
 /* You can add global styles to this file, and also import other style files */
+body {
+  margin: 0;
+}
+
+.back-btn {
+  cursor: pointer;
+  position: fixed;
+  border-radius: 50%;
+  color: white;
+  top: 20px;
+  right: 20px;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  .icon {
+    width: 48px;
+    height: 48px;
+  }
+
+  &:hover {
+    .icon {
+      transition: ease 1s;
+      width: 60px;
+      height: 60px;
+    }
+  }
+}

@@ -1,8 +1,8 @@
-<div class="home-container">
+<div class="main-container">
   <div class="avatar-container">
-    <div class="avatar1" (mouseenter)="isAvatar1Active = true"  (mouseleave)="isAvatar1Active = false"></div>
-    <div class="avatar2" (mouseenter)="isAvatar2Active = true"  (mouseleave)="isAvatar2Active = false"></div>
-    <div class="avatar3" (mouseenter)="isAvatar3Active = true"  (mouseleave)="isAvatar3Active = false"></div>
+    <div class="avatar1" (mouseenter)="isAvatar1Active = true"  (mouseleave)="isAvatar1Active = false" [routerLink]="'../introduction'"></div>
+    <div class="avatar2" (mouseenter)="isAvatar2Active = true"  (mouseleave)="isAvatar2Active = false" [routerLink]="'../stories'"></div>
+    <div class="avatar3" (mouseenter)="isAvatar3Active = true"  (mouseleave)="isAvatar3Active = false" [routerLink]="'../achievements'"></div>
   </div>
   <div class="content-container">
     <div class="content">
