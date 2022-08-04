@@ -7,13 +7,13 @@ import { Component, OnInit } from '@angular/core';
 })
 export class HomeComponent implements OnInit {
 
+  isAvatar1Active = false;
+  isAvatar2Active = false;
+  isAvatar3Active = false;
+
   constructor() { }
 
   ngOnInit(): void {
-  }
-
-  alert() {
-    alert('1')
   }
 
 }

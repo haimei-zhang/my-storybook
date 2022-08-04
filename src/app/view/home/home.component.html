@@ -1,13 +1,27 @@
 <div class="home-container">
   <div class="avatar-container">
-    <div class="avatar"></div>
-    <div class="avatar"></div>
-    <div class="avatar"></div>
-
+    <div class="avatar1" (mouseenter)="isAvatar1Active = true"  (mouseleave)="isAvatar1Active = false"></div>
+    <div class="avatar2" (mouseenter)="isAvatar2Active = true"  (mouseleave)="isAvatar2Active = false"></div>
+    <div class="avatar3" (mouseenter)="isAvatar3Active = true"  (mouseleave)="isAvatar3Active = false"></div>
+  </div>
+  <div class="content-container">
     <div class="content">
-      <h1>My Storybook</h1>
+      <div class="content-home" [ngClass]="{hidden: isAvatar1Active || isAvatar2Active || isAvatar3Active}">
+        <h1 class="title">我们的故事书</h1>
+        <p>这是佴九良和佴九歌的故事书，还有什么要写的文案呢，不知道啊，啊啊啊啊啊，写什么好呢，不知道不知道不知道， 阿斯顿发送到阿萨德饭啊啊士大夫阿道夫阿萨德饭按到地方按到撒打发士大夫阿萨德饭</p>
+      </div>
+      <div class="content1" [ngClass]="{hidden: !isAvatar1Active}">
+        <h1 class="title">我们的简介</h1>
+        <p>这是佴九良和佴九歌的简介，还有什么要写的文案呢，不知道啊，啊啊啊啊啊，写什么好呢，不知道不知道不知道， 阿斯顿发送到阿萨德饭啊啊士大夫阿道夫阿萨德饭按到地方按到撒打发士大夫阿萨德饭</p>
+      </div>
+      <div class="content2" [ngClass]="{hidden: !isAvatar2Active}">
+        <h1 class="title">我们的故事</h1>
+        <p>这是佴九良和佴九歌的故事，还有什么要写的文案呢，不知道啊，啊啊啊啊啊，写什么好呢，不知道不知道不知道， 阿斯顿发送到阿萨德饭啊啊士大夫阿道夫阿萨德饭按到地方按到撒打发士大夫阿萨德饭</p>
+      </div>
+      <div class="content3" [ngClass]="{hidden: !isAvatar3Active}">
+        <h1 class="title">我们的战绩</h1>
+        <p>这是佴九良和佴九歌的战绩，还有什么要写的文案呢，不知道啊，啊啊啊啊啊，写什么好呢，不知道不知道不知道， 阿斯顿发送到阿萨德饭啊啊士大夫阿道夫阿萨德饭按到地方按到撒打发士大夫阿萨德饭</p>
+      </div>
     </div>
-
   </div>
 </div>
-<button (click)="alert()">test click</button>

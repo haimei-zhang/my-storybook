@@ -16,4 +16,71 @@
   right: -30vw;
   bottom: 20%;
   border-radius: 50%;
+
+  .avatar1 {
+    cursor: pointer;
+    position: fixed;
+    border: 2px solid white;
+    border-radius: 50%;
+    height: 200px;
+    width: 200px;
+    top: 20vh;
+    left: 8%;
+    background: url("../../../assets/images/home-avatar1.jpg") no-repeat center center;
+    background-size: cover;
+  }
+
+  .avatar2 {
+    cursor: pointer;
+    position: fixed;
+    border: 2px solid white;
+    border-radius: 50%;
+    height: 200px;
+    width: 200px;
+    top: 50vh;
+    left: 20%;
+    background: url("../../../assets/images/home-avatar2.jpg") no-repeat center center;
+    background-size: cover;
+  }
+
+  .avatar3 {
+    cursor: pointer;
+    position: fixed;
+    border: 2px solid white;
+    border-radius: 50%;
+    height: 200px;
+    width: 200px;
+    top: 65vh;
+    left: 45%;
+    background: url("../../../assets/images/0 (34).jpg") no-repeat center center;
+    background-size: cover;
+  }
+
+  .avatar1, .avatar2, .avatar3 {
+    &:hover {
+      transition: ease 1s;
+      width: 250px;
+      height: 250px;
+    }
+  }
+}
+
+.content-container {
+  padding: 20px;
+  position: relative;
+  left: 20vw;
+  margin-right: 20vw;
+  color: white;
+
+  .title {
+    text-align: center;
+  }
+
+  .content {
+    text-align: left;
+  }
+}
+
+.hidden {
+  display: none;
 }
